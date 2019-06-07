@@ -340,3 +340,11 @@ footer {
 .home .walk-text .btn:hover {
   background-color: #00b3b3;
 }
+.aboutUs {
+  display: flex;
+  justify-items: center;
+}
+.aboutUs .intro2 {
+  display: flex;
+  justify-items: center;
+}
