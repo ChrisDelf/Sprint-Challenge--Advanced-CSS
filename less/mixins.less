@@ -1,1 +1,26 @@
 // Mixins Here
+
+
+
+
+.buttonCust (@buttonColor, @buttonFont, @buttonTextColor) {
+  padding: 5px 20px;
+  background: @buttonColor;
+  border: 1px sold gray;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  color: @buttonTextColor;
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  font-size: @buttonFont;
+  padding-top: 10px;
+
+
+}
+
+// Escaping //
+
+@phone: ~"(max-width: 500px)";
+

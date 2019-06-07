@@ -11,7 +11,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -19,11 +19,30 @@
     flex-wrap: wrap;
     width: 100%;
 
+      @media @phone {
+      justify-content: space-around;
+
+
+
+    }
+
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+       @media @phone {
+       width: 100%;
+
+
+
+    }
+
+
+
+
     }
   }
 
@@ -58,18 +77,86 @@
       }
 
       .btn {
+
+          .buttonCust(@btn-bg-color, 1.8rem, white);
+
+
+
+
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        order: -2;
+
+
+
+
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+
+
       }
     }
   }
 }// home
+
+.imgHeaderCon {
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+.hearder-img {
+
+  width: 100%;
+  border-radius: 5px;
+
+
+}
+
+//   Images 500px
+
+.sky {
+
+  @media @phone {
+    display: none;
+
+
+
+  }
+
+}
+
+.launch {
+
+  @media @phone {
+    display: none;
+
+  }
+}
+
+
+.blast {
+
+  @meida @phone {
+     width: 50%;
+
+
+
+  }
+
+
+}
+
