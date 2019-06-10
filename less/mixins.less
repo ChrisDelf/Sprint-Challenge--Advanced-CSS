@@ -1,1 +1,58 @@
 // Mixins Here
+
+
+
+
+.buttonCust (@buttonColor, @buttonFont, @buttonTextColor) {
+  padding: 5px 20px;
+  background: @buttonColor;
+  border: 1px sold gray;
+  margin: 10px;
+  border-radius: 10px;
+  display: inline-block;
+  color: @buttonTextColor;
+  width: 40%;
+  height: 40px;
+  text-align: center;
+  font-size: @buttonFont;
+  padding-top: 10px;
+
+
+}
+
+.imgDisplayNone {
+  @media @phone {
+    display: none;
+
+  }
+
+}
+
+.headerBgrdC {
+ background-color: lightgray;
+}
+
+// Escaping //
+
+@phone: ~"(max-width: 500px)";
+
+
+// animations //
+
+.leftRight (@animSpeed, @animRest)
+{
+  animation: square-to-circle @animSpeed @animRest infinite
+  cubic-bezier(1, 0.015, 0.295, 1.225) alternate;
+}
+
+
+@keyframes square-to-circle {
+  0% {
+    background-color: #3fe0d0;
+    transform: rotate (0deg);
+  }
+  25% {
+    background: #7ef9ff;
+    transform: rotate (45deg);
+  }
+}

@@ -11,7 +11,7 @@
     p {
       padding:0 15px;
     }
-  
+
   }
 
   .space-images {
@@ -19,11 +19,30 @@
     flex-wrap: wrap;
     width: 100%;
 
+      @media @phone {
+      justify-content: space-around;
+
+
+
+    }
+
+
     img {
       width: 28%;
       margin: 20px 2.5%;
       border-radius: 20px;
       height: 100%;
+
+       @media @phone {
+       width: 100%;
+
+
+
+    }
+
+
+
+
     }
   }
 
@@ -46,8 +65,21 @@
     display: flex;
     justify-content: center;
 
+      @media @phone {
+        flex-direction: column;
+        padding: 10px;
+
+      }
+
     .walk-text {
       width: 50%;
+      @media @phone {
+
+        width: 100%;
+
+
+      }
+
 
       h3 {
         margin-bottom: 10px;
@@ -58,18 +90,195 @@
       }
 
       .btn {
+
+          .buttonCust(@btn-bg-color, 1.8rem, white);
+
+          @media @phone {
+
+            width: 100%;
+            margin: 5px;
+
+
+
+          }
+
+
       }
     }
 
     .walk-img {
       width: 46%;
       margin-left: 4%;
-      
+
+      @media @phone {
+        order: -2;
+        justify-content: center;
+        width: 100%;
+        margin-right: 4%;
+        margin-left: 0%;
+
+
+
+
+      }
+
       img {
         width: 100%;
         height: auto;
         border-radius: 10px;
+
+       // @media @phone {
+      //    width: 250%;
+      //    margin: auto;
+
+
+      //  }
+
+
+
       }
     }
   }
 }// home
+
+.imgHeaderCon {
+  display: flex;
+  justify-content: center;
+
+
+
+}
+
+.hearder-img {
+
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 100px;
+
+
+}
+
+//   Images 500px
+
+.sky {
+
+ .imgDisplayNone();
+
+
+
+}
+
+.launch {
+.imgDisplayNone();
+
+}
+
+
+.blast {
+
+  @media @phone {
+     width: 50%;
+
+
+
+  }
+
+}
+
+.home .walk-text .btn:hover
+{
+  background-color: #00b3b3;
+}
+
+// About Us
+
+.aboutUs {
+   display: flex;
+    justify-items: center;
+
+
+
+}
+
+
+
+
+.intro2 {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+
+}
+
+
+ ul li {
+
+  font-size: 1.6rem;
+
+
+
+
+ }
+
+ ul {
+  margin: 15px;
+
+
+
+
+ }
+
+
+.pillarCon
+{
+  display: flex;
+  justify-content: center;
+  border-radius: 10px;
+
+
+
+
+
+}
+
+ .pillar {
+
+  width: 100%;
+  border-radius: 10px;
+
+
+       @media @phone {
+
+            width: 90%;
+            margin: 10px;
+            border-radius: 10px;
+
+
+          }
+ }
+
+
+
+ .animArea h2
+
+ {
+
+  .leftRight (2s, 3s);
+
+
+ }
+
+.midContent {
+
+  display: flex ;
+  flex-direction: column;
+  justify-items: center;
+  margin: 10px;
+
+
+
+
+
+
+}
+
